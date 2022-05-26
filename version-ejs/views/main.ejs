@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Productos</title>
+  </head>
+  <body>
+    <h1>Lista de productos (Ejs)</h1>
+    <a href="/">
+      <button>Agregar un producto</button>
+    </a>
+    <% for(let producto of productos){ %>
+      <hr>
+      <h4>Nombre del producto: <%=producto.title%></h4>
+      <p>Precio: <%=producto.price%></p>
+      <p>url de la miniatura: <%=producto.url%></p>
+    <%}%>
+  </body>
+</html>

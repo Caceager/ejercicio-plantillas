@@ -1,0 +1,15 @@
+- let productos = products
+html
+  head
+    title='Lista de productos'
+  body
+    h1= 'Lista de productos (pug)'
+    a(href= '/')
+      button= 'Agregar un producto'
+    each producto in productos
+      hr
+      h4= 'Nombre del producto: '+producto.title
+      p= 'Precio: '+producto.price
+      p= 'Url de la miniatura: '+producto.url
+    else
+      h2= 'No se encontraron productos.'
